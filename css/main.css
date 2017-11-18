@@ -1,6 +1,8 @@
 * {
 	font-family: 'EB Garamond', serif;
 	font-size: 1.1rem;
+	-webkit-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
 	transition: 0.5s ease-in-out;
 }
 body {
@@ -22,6 +24,9 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 hr {
 	color: #efcdc1;
 }
+button:hover, a:hover {
+	cursor: pointer;
+}
 a:hover {
 	text-decoration: none;
 }
@@ -39,6 +44,8 @@ i.fa {
 	color: #363C3D;
 }
 .nav-item, .nav-item a {
+	-webkit-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
 	transition: 0.3s ease-in-out;
 }
 .nav-item:nth-child(1):hover {
@@ -55,6 +62,9 @@ i.fa {
 }
 .nav-item:nth-child(5):hover {
 	background-color: #d6addc;
+}
+.nav-item:nth-child(6):hover {
+	background-color: #dea1bb;
 }
 .nav-item:hover {
 	padding: 1%;
@@ -115,6 +125,8 @@ i.fa {
 	white-space: nowrap;
 }
 .reviews {
+	-webkit-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
 	transition: 0.3s ease;
 }
 .reviews:first-child:hover {
@@ -175,13 +187,17 @@ i.fa {
 .rate h3, .rate h4 {
 	position: relative;
 	top: 20%;
+	-webkit-transition: 0.2s ease;
+	-o-transition: 0.2s ease;
 	transition: 0.2s ease;
 }
 .hover-hidden {
 	opacity: 0;
 }
 .rate:hover h3, .rate:hover h4 {
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);
 	top: 0;
 }
 .rate:hover .hover-hidden {
@@ -199,33 +215,30 @@ i.fa {
 	position: absolute;
 	top: 0;
 	left: 0;
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 }
 .grid img:nth-child(3) {
 	mix-blend-mode: screen;
 }
 .container-fluid.rates {
 	background-image: url("../images/woodtexture.jpg");
-	/*background-position: right bottom;*/
 	min-height: 75vh;
 	position: relative;
 }
 .container-fluid.rates h1 {
-	/*position: absolute;
-	padding: 20px 450px;*/
 	background-color: rgba(255,255,255,0.6);
-	/*top: 55%;
-	left: -10%;*/
 	mix-blend-mode: hard-light;
 	position: relative;
 	right: 15vw;
 	top: 20vw;
 }
 .container-fluid.testimonials #mural {
-	/*max-height: 50%;*/
 	height: 100%;
-	object-fit: cover;
-	object-position: 50% 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	-o-object-position: 50% 100%;
+	   object-position: 50% 100%;
 	mix-blend-mode: overlay;
 }
 .bg-img {
@@ -246,8 +259,10 @@ i.fa {
 }
 .container-fluid.testimonials #woods {
 	height: 100%;
-	object-fit: cover;
-	object-position: center center;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	-o-object-position: center center;
+	   object-position: center center;
 	mix-blend-mode: hard-light;
 }
 .modalBtn {
@@ -263,7 +278,9 @@ i.fa {
 	cursor: pointer;
 }
 .bookBtn:hover {
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);
 }
 .midDot {
 	position: relative;
@@ -276,7 +293,9 @@ i.fa {
 	position: absolute;
 	top: -190px;
 	left: 50%;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
 	border-right: 0px solid #efcdc1;
 }
 #therapeutic:hover {
@@ -291,6 +310,8 @@ i.fa {
     height: 3px;
     left: 0;
     background-color: #efcdc1;
+    -webkit-transition: width 0.3s ease-in-out;
+    -o-transition: width 0.3s ease-in-out;
     transition: width 0.3s ease-in-out;
 }
 #therapeutic h4:after {
@@ -302,15 +323,21 @@ i.fa {
     height: 2px;
     right: 0;
     background-color: #efcdc1;
+    -webkit-transition: width 0.3s ease-in-out 0.15s;
+    -o-transition: width 0.3s ease-in-out 0.15s;
     transition: width 0.3s ease-in-out 0.15s;
 }
 #therapeutic:hover h4:before {
     width: 100%;
+    -webkit-transition: 0.3s ease-in-out 0.15s;
+    -o-transition: 0.3s ease-in-out 0.15s;
     transition: 0.3s ease-in-out 0.15s;
 }
 #therapeutic:hover h4:after {
     width: 0;
     right: 0;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
 }
 #booking {
@@ -324,7 +351,9 @@ i.fa {
 #customers {
 	position: absolute;
 	top: 75%; left: 0;
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
 }
 #ulysses {
 	border: 12px solid #FFF;
@@ -336,6 +365,8 @@ i.fa {
 	position: relative;
 	bottom: 4px;
 	max-width: 46px;
+	-webkit-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
 	transition: 0.3s ease;
 }
 #contact {
@@ -343,28 +374,40 @@ i.fa {
 }
 #contact i.fa {
 	font-size: 1.5rem;
+	-webkit-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
 	transition: 0.3s ease;
 }
 #contact li:hover i.fa, #contact li:hover a img {
-	transform: scale(1.8);
+	-webkit-transform: scale(1.8);
+	    -ms-transform: scale(1.8);
+	        transform: scale(1.8);
 }
 #contact button {
 	font-size: 1.5rem;
+	-webkit-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
 	transition: 0.3s ease;
 	color: #FFF;
 }
 #contact button:hover {
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);
 	background-color: #FFF;
 	color: #e68c6c;
 }
 #getInTouch h4 {
 	max-width: 30%;
 	margin: 0 auto;
+	-webkit-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
 	transition: 0.3s ease;
 }
 #getInTouch:hover h4{
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);
 	background-color: #FFF;
 	color: #0a2d35;
 }
